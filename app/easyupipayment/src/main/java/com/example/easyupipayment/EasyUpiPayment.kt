@@ -246,7 +246,7 @@ class EasyUpiPayment constructor(private val mActivity: Activity, private val mP
             amount.run {
                 checkNotNull(this) { "Must call setAmount() before build()." }
                 check(this.matches("""\d*""".toRegex())) {
-                    "Amount should be valid positive number and in decimal format (For e.g. 100.00)"
+                    "Amount should be valid positive number only (For e.g. 100)"
                 }
             }
 

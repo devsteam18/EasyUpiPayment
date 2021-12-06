@@ -28,7 +28,7 @@ class PaymentUiActivity : AppCompatActivity() {
         val paymentUri = Uri.Builder().apply {
             with(payment) {
                 scheme("upi").authority("pay")
-                appendQueryParameter("pa", "8555099340@okbizaxis")
+                appendQueryParameter("pa", vpa)
                 appendQueryParameter("pn", name)
                 appendQueryParameter("mc",payeeMerchantCode)
                 appendQueryParameter("tn", description)
